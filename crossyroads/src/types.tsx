@@ -1,6 +1,8 @@
 import * as THREE from "three";
 
 export type RowType = "forest" | "car" | "truck";
+export type MoveDirection = "forward" | "backward" | "left" | "right";
+
 
 export type Row =
   | {
