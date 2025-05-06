@@ -1,6 +1,7 @@
 import type { MoveDirection } from "../types";
 import { endsUpInValidPosition } from "../utilities/endsUpInValidPosition";
 import useMapStore from "./map";
+import useGameStore from "./game";
 // The store will keep track of the player’s position and movement queue.
 
 // export a state object with the player’s current position and the moves queue. 
@@ -40,5 +41,5 @@ export function stepCompleted() {
     if (state.currentRow === useMapStore.getState().rows.length - 10) {
       useMapStore.getState().addRows();
     }
-    
+    useGameStore.getState().updateScore(state.currentRow);
 }
