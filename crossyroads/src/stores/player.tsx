@@ -1,4 +1,5 @@
 import type { MoveDirection } from "../types";
+import { endsUpInValidPosition } from "../utilities/endsUpInValidPosition";
 
 // The store will keep track of the player’s position and movement queue.
 
@@ -17,6 +18,12 @@ export const state: {
 
 // adds a movement command to the end of the moves queu
 export function queueMove(direction: MoveDirection) {
+  const isValidMove = endsUpInValidPosition(
+    { rowIndex: state.currentRow, tileIndex: state.currentTile },
+    [...state.movesQueue, direction]
+  );
+
+  if (!isValidMove) return;
   state.movesQueue.push(direction);
 }
 
