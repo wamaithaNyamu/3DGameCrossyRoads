@@ -1,4 +1,4 @@
-import useStore from "../stores/game";
+import useStore from "../../stores/game";
 import "./Result.css";
 
 export function Result() {

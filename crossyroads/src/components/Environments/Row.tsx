@@ -1,7 +1,7 @@
-import type { Row } from "../types";
-import { Forest } from "./Forest";
-import { CarLane } from "./CarLane";
-import { TruckLane } from "./TruckLane";
+import type { Row } from "../../shared/types";
+import { Forest } from "../Assets/Forest";
+import { CarLane } from "../Assets/CarLane";
+import { TruckLane } from "../Assets/TruckLane";
 
 type Props = {
   rowIndex: number;

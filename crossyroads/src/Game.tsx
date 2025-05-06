@@ -1,11 +1,9 @@
-import { Scene } from "./components/Scene";
-import { Player } from "./components/Player";
-import { Map } from "./components/Map";
-import { Controls } from "./components/Controls";
-import { Score } from "./components/Score";
-import { Result } from "./components/Result";
-import "./Game.css";
-
+import { Scene } from "./components/Environments/Scene";
+import { Player } from "./components/Assets/Player";
+import { Map } from "./components/Assets/Map";
+import { Controls } from "./components/Controls/Controls";
+import { Score } from "./components/Scores/Score";
+import { Result } from "./components/Results/Result";
 
 export default function Game() {
   return (

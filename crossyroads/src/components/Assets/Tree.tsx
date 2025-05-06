@@ -1,4 +1,4 @@
-import { tileSize } from "../constants";
+import { tileSize } from "../../shared/constants";
 
 type Props = {
   tileIndex: number;

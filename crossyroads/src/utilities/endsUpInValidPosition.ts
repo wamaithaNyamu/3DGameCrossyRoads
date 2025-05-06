@@ -1,6 +1,6 @@
-import type { MoveDirection } from "../types";
+import type { MoveDirection } from "../shared/types";
 import { calculateFinalPosition } from "./calculateFinalPosition";
-import { minTileIndex, maxTileIndex } from "../constants";
+import { minTileIndex, maxTileIndex } from "../shared/constants";
 import useMapStore from "../stores/map";
 
 

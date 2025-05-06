@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
-import { tileSize } from "../constants";
+import { tileSize } from "../shared/constants";
 import { state, stepCompleted } from "../stores/player";
 
 export default function usePlayerAnimation(

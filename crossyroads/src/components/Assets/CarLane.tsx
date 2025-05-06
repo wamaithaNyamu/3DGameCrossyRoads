@@ -1,23 +1,23 @@
-import type { Row } from "../types";
+import type { Row } from "../../shared/types";
 import { Road } from "./Road";
-import { Truck } from "./Truck";
+import { Car } from "./Car";
 
 type Props = {
   rowIndex: number;
-  rowData: Extract<Row, { type: "truck" }>;
+  rowData: Extract<Row, { type: "car" }>;
 };
 
-export function TruckLane({ rowIndex, rowData }: Props) {
+export function CarLane({ rowIndex, rowData }: Props) {
   return (
     <Road rowIndex={rowIndex}>
       {rowData.vehicles.map((vehicle, index) => (
-        <Truck
+        <Car
           key={index}
           rowIndex={rowIndex}
-          color={vehicle.color}
           initialTileIndex={vehicle.initialTileIndex}
           direction={rowData.direction}
           speed={rowData.speed}
+          color={vehicle.color}
         />
       ))}
     </Road>

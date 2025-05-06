@@ -1,4 +1,4 @@
-import { tilesPerRow, tileSize } from "../constants";
+import { tilesPerRow, tileSize } from "../../shared/constants";
 
 type Props = {
   rowIndex: number;

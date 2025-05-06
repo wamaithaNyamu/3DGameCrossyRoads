@@ -1,4 +1,4 @@
-import type { Row } from "../types";
+import type { Row } from "../../shared/types";
 import { Grass } from "./Grass";
 import { Tree } from "./Tree";
 

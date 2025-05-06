@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { generateRows } from "../utilities/generateRows";
-import type { Row } from "../types";
+import type { Row } from "../shared/types";
 
 interface StoreState {
   rows: Row[];

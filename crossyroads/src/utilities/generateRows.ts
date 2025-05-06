@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import { minTileIndex, maxTileIndex } from "../constants";
-import { type Row, type RowType } from "../types";
+import { minTileIndex, maxTileIndex } from "../shared/constants";
+import { type Row, type RowType } from "../shared/types";
 
 export function generateRows(amount: number): Row[] {
   const rows: Row[] = [];

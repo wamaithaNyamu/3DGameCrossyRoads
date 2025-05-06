@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import type { MoveDirection } from "../types";
+import type { MoveDirection } from "../shared/types";
 import { endsUpInValidPosition } from "../utilities/endsUpInValidPosition";
 import useMapStore from "./map";
 import useGameStore from "./game";

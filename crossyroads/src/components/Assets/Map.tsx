@@ -1,6 +1,6 @@
 import { Grass } from "./Grass";
-import { Row } from "./Row";
-import useStore from "../stores/map";
+import { Row } from "../Environments/Row";
+import useStore from "../../stores/map";
 
 export function Map() {
   const rows = useStore((state) => state.rows);

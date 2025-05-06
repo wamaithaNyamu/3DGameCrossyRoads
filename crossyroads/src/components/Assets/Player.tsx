@@ -2,9 +2,9 @@ import * as THREE from "three";
 import { Bounds } from "@react-three/drei";
 import { useRef, useEffect } from "react";
 import { useThree } from "@react-three/fiber";
-import usePlayerAnimation from "../hooks/usePlayerAnimation";
-import { DirectionalLight } from "./DirectionalLight";
-import { setRef } from "../stores/player";
+import usePlayerAnimation from "../../hooks/usePlayerAnimation";
+import { DirectionalLight } from "../Environments/DirectionalLight";
+import { setRef } from "../../stores/player";
 export function Player() {
   const player = useRef<THREE.Group>(null);
   const lightRef = useRef<THREE.DirectionalLight>(null);
